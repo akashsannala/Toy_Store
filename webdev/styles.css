@@ -1,0 +1,181 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -5px;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+section {
+    height: 100vh; /* Each section occupies full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: background-color 0.5s ease;
+    scroll-snap-align: start; /* Ensure smooth snapping */
+    position: relative; /* Establishes a containing block for absolute positioning */
+}
+
+section:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+section:nth-child(even) {
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.intro-image {
+    max-width: 40%; /* Adjust size as needed */
+    margin-right: 20px; /* Space between image and text */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    position: absolute;
+    left: -50%; /* Moves the image towards the left */
+}
+
+.intro-text {
+    max-width: 60%;
+}
+
+section h2 {
+    font-size: 3em;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 1.2em;
+    text-align: center;
+    max-width: 600px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Space between the service items */
+}
+
+.service-item {
+    text-align: center;
+    max-width: 30%; /* Adjust as needed */
+    border: 2px solid #ddd; /* Border style */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visual effect */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    border-color: #ff6b6b; /* Change border color on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.service-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.5em;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff6b6b; /* Change color on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+footer p {
+    margin: 0;
+}
+

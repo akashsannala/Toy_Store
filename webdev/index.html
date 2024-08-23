@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaySpark - Ignite Your Imagination</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>PlaySpark</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Toys</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="intro-content">
+            <img src="download.jpg" alt="PlaySpark Toys" class="intro-image">
+            <div class="intro-text">
+                <h2>Welcome to PlaySpark!</h2>
+                <p>At PlaySpark, we ignite the spark of creativity and imagination in every child with our vibrant, innovative toys designed to inspire, entertain, and support their growth. Explore our interactive website, where kids can enjoy virtual toy showcases, engaging mini-games, and educational content that makes learning fun.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>PlaySpark is dedicated to creating toys that not only bring joy but also foster cognitive and emotional development. Our team of designers, educators, and child psychologists work together to craft toys that encourage exploration and creativity. From classic favorites to modern innovations, we are committed to sparking curiosity and wonder in every child.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Toys</h2>
+        <div class="services-container">
+            <div class="service-item">
+                <img src="pngtree-abstract-pink-coral-christmas-background-with-toys-decorations-with-frame-for-image_15296540.jpg" alt="Service 1" class="service-image">
+                <p>Interactive Toy Showcases</p>
+            </div>
+            <div class="service-item">
+                <img src="free-photos-soft-and-cuddly-kids-toys---cute-teddy-bear-sitting-alongside-other-pink-and-white-teddy-bears-these-preview-1004209775.jpg" alt="Service 2" class="service-image">
+                <p>Monthly Creative Challenges</p>
+            </div>
+            <div class="service-item">
+                <img src="images.jpg" alt="Service 3" class="service-image">
+                <p>Customizable Toys & Online Store</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need more information, feel free to contact us at: <a href="mailto:example@example.com">example@example.com</a></p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://t.me" target="_blank" title="Telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PlaySpark. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Smooth scrolling effect
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
